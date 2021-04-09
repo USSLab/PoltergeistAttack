@@ -1,6 +1,6 @@
-# What is DolphinAttack?
+# What is PoltergeistAttack?
 
-## How does DolphinAttack work?
+## How does PoltergeistnAttack work?
 
 # Simulation Evaluation
 
