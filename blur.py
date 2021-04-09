@@ -39,4 +39,7 @@ def cal_blur(imgarray, theta, delta, L, S=0):
                     count += 1
             blurred_imgarray[x, y] = np.array([sum_r / count, sum_g / count, sum_b / count])
     return blurred_imgarray
+<<<<<<< HEAD
 
+=======
+>>>>>>> 44641a2c3b52a67b1d186835a3680a9c28c72db1
