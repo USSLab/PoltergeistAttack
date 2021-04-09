@@ -18,8 +18,12 @@ def cal_blur(imgarray, theta, delta, L, S=0):
             alpha = math.atan2(y - c1, x - c0)
             X_cos = L * math.cos(delta) - S * R * math.cos(alpha)
             Y_sin = L * math.sin(delta) - S * R * math.sin(alpha)
-            N = int(max(abs(R * math.cos(alpha + theta) + X_cos + c0 - x),
-                        abs(R * math.sin(alpha + theta) + Y_sin + c1 - y)))
+            N = int(
+                max(
+                    abs(R * math.cos(alpha + theta) + X_cos + c0 - x),
+                    abs(R * math.sin(alpha + theta) + Y_sin + c1 - y),
+                )
+            )
             if N <= 0:
                 continue
             count = 0
@@ -37,9 +41,7 @@ def cal_blur(imgarray, theta, delta, L, S=0):
                     sum_g += imgarray[xt, yt][1]
                     sum_b += imgarray[xt, yt][2]
                     count += 1
-            blurred_imgarray[x, y] = np.array([sum_r / count, sum_g / count, sum_b / count])
+            blurred_imgarray[x, y] = np.array(
+                [sum_r / count, sum_g / count, sum_b / count]
+            )
     return blurred_imgarray
-<<<<<<< HEAD
-
-=======
->>>>>>> 44641a2c3b52a67b1d186835a3680a9c28c72db1
