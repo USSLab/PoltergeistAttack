@@ -6,7 +6,6 @@ Autonomous vehicles increasingly exploit computer-visionbased object detection s
 
 ![attack](./images/attack.png)
 
-
 # Simulation Evaluation
 
 ## Blur model
@@ -39,19 +38,27 @@ To optimize the designed objective functions, we employ [Bayesian Optimization](
 
 - **Hiding attacks** (HA) cause an object to become undetected.
 
+The originally detected car can be incorrectly detected under linear motion blur. (a) The car is detected with a high confidence score (0.997) without blur. (b) The car is detected with a decreased confidence score (0.919) with light linear motion blur. (c-d) The car is undetected when linear motion blur is increased.
+
 ![](./images/HA1.png) ![](./images/HA2.png) ![](./images/HA3.png) ![](./images/HA4.png)
 
 - **Creating attacks** (CA) induce a non-existent object.
 
+The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
+
 ![](./images/CA1.png) ![](./images/CA2.png) ![](./images/CA3.png) ![](./images/CA4.png)
 
 - **Altering attacks** (AA) cause an object to be misclassified.
+
+The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) under different motion blur.
 
 ![](./images/AA1.png) ![](./images/AA2.png) ![](./images/AA3.png) ![](./images/AA4.png)
 
 # Real-world Attack Evaluation
 
 In the real-world evaluation, we target a smartphone on a moving vehicle and conduct PG attacks towards it inside the vehicle via acoustic signals. Here are some [demo videos](https://sites.google.com/view/poltergeistattack/)
+
+![](./images/setup.png)
 
 # Contact
 * Prof. Wenyuan Xu (<wyxu@zju.edu.cn>)
