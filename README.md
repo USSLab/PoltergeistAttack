@@ -55,17 +55,17 @@ To optimize the designed objective functions, we employ [Bayesian Optimization](
 
 The originally detected car can be incorrectly detected under linear motion blur. (a) The car is detected with a high confidence score (0.997) without blur. (b) The car is detected with a decreased confidence score (0.919) with light linear motion blur. (c-d) The car is undetected when linear motion blur is increased.
 
-<center>
- <img src=./images/HA1.png width="200px"/><img src=./images/HA2.png width="200px"/><img src=./images/HA3.png width="200px"/><img src=./images/HA4.png width="200px"/>
-</center>
+
+<img src=./images/HA1.png width="200px"/><img src=./images/HA2.png width="200px"/><img src=./images/HA3.png width="200px"/><img src=./images/HA4.png width="200px"/>
+
 
 - **Creating attacks** (CA) induce a non-existent object.
 
 The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
 
-<center>
- <img src=./images/CA1.png width="200px" /><img src=./images/CA2.png width="200px" /><img src=./images/CA3.png width="200px" /><img src=./images/CA4.png width="200px" />
-</center>
+
+<img src=./images/CA1.png width="200px" /><img src=./images/CA2.png width="200px" /><img src=./images/CA3.png width="200px" /><img src=./images/CA4.png width="200px" />
+
 
 - **Altering attacks** (AA) cause an object to be misclassified.
 
