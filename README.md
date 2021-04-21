@@ -71,9 +71,9 @@ The originally undetected region in an image (a). Under different linear motion 
 
 The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) under different motion blur.
 
-<center>
- <img src=./images/AA1.png width="200px" /><img src=./images/AA2.png width="200px" /><img src=./images/AA3.png width="200px" /><img src=./images/AA4.png width="200px" />
-</center>
+
+<img src=./images/AA1.png width="200px" /><img src=./images/AA2.png width="200px" /><img src=./images/AA3.png width="200px" /><img src=./images/AA4.png width="200px" />
+
 
 Here is a **demo video** showing the real-world attack effects of the three attacks introduced above.
 <video src="./images/demo.mp4" width=800></video>
@@ -82,9 +82,9 @@ Here is a **demo video** showing the real-world attack effects of the three atta
 # Real-world Attack Evaluation
 
 In the real-world evaluation, we target a smartphone on a moving vehicle and conduct PG attacks towards it inside the vehicle via acoustic signals. Here are some [demo videos](https://sites.google.com/view/poltergeistattack/).
-
+<center>
 <img src=./images/setup.png width="600px" />
-
+</center>
 # Contact
 * Prof. Wenyuan Xu (<wyxu@zju.edu.cn>)
 * Prof. Xiaoyu Ji (<xji@zju.edu.cn>)
