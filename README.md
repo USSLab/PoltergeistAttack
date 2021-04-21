@@ -52,13 +52,15 @@ The originally detected car can be incorrectly detected under linear motion blur
 
 The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
 
-![](./images/CA1.png) ![](./images/CA2.png) ![](./images/CA3.png) ![](./images/CA4.png)
+![](./images/CA1.png) ![](./images/CA2.png) <br>
+![](./images/CA3.png) ![](./images/CA4.png)
 
 - **Altering attacks** (AA) cause an object to be misclassified.
 
 The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) under different motion blur.
 
-![](./images/AA1.png) ![](./images/AA2.png) ![](./images/AA3.png) ![](./images/AA4.png)
+![](./images/AA1.png) ![](./images/AA2.png) <br>
+![](./images/AA3.png) ![](./images/AA4.png)
 
 # Real-world Attack Evaluation
 
@@ -72,11 +74,11 @@ In the real-world evaluation, we target a smartphone on a moving vehicle and con
 
 # Powered by
 
-## Ubiquitous System Security Laboratory (USSLab)
+### Ubiquitous System Security Laboratory (USSLab)
 
 <a href="http:/usslab.org">![USSLab logo](./images/usslab_logo.png)</a>
 
-## Zhejiang University 
+### Zhejiang University 
 
 <a href="http://www.zju.edu.cn/english/">![ZJU logo](./images/zju_logo.png)</a>
 
