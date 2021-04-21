@@ -56,7 +56,7 @@ To optimize the designed objective functions, we employ [Bayesian Optimization](
 The originally detected car can be incorrectly detected under linear motion blur. (a) The car is detected with a high confidence score (0.997) without blur. (b) The car is detected with a decreased confidence score (0.919) with light linear motion blur. (c-d) The car is undetected when linear motion blur is increased.
 
 <center>
-    <img src=./images/HA1.png width="200px"/><img src=./images/HA2.png width="200px"/><img src=./images/HA3.png width="200px"/><img src=./images/HA4.png width="200px"/>
+ <img src=./images/HA1.png width="200px"/><img src=./images/HA2.png width="200px"/><img src=./images/HA3.png width="200px"/><img src=./images/HA4.png width="200px"/>
 </center>
 
 - **Creating attacks** (CA) induce a non-existent object.
@@ -64,7 +64,7 @@ The originally detected car can be incorrectly detected under linear motion blur
 The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
 
 <center>
-    <img src=./images/CA1.png width="200px" /><img src=./images/CA2.png width="200px" /><img src=./images/CA3.png width="200px" /><img src=./images/CA4.png width="200px" />
+ <img src=./images/CA1.png width="200px" /><img src=./images/CA2.png width="200px" /><img src=./images/CA3.png width="200px" /><img src=./images/CA4.png width="200px" />
 </center>
 
 - **Altering attacks** (AA) cause an object to be misclassified.
@@ -72,7 +72,7 @@ The originally undetected region in an image (a). Under different linear motion 
 The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) under different motion blur.
 
 <center>
-     <img src=./images/AA1.png width="200px" /><img src=./images/AA2.png width="200px" /><img src=./images/AA3.png width="200px" /><img src=./images/AA4.png width="200px" />
+ <img src=./images/AA1.png width="200px" /><img src=./images/AA2.png width="200px" /><img src=./images/AA3.png width="200px" /><img src=./images/AA4.png width="200px" />
 </center>
 
 Here is a **demo video** showing the real-world attack effects of the three attacks introduced above.
