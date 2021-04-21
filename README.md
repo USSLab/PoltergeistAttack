@@ -4,7 +4,7 @@ Autonomous vehicles increasingly exploit computer-visionbased object detection s
 
 ## How does PoltergeistAttack work?
 
- <div align="center">![attack](https://github.com/Jiahui-Young/PoltergeistAttack/blob/Jiahui-Young-patch-1/images/attack.png)</div>
+ <div align=center><src=https://github.com/Jiahui-Young/PoltergeistAttack/blob/Jiahui-Young-patch-1/images/attack.png></div>
 
 # Simulation Evaluation
 
