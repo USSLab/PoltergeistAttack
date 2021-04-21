@@ -55,7 +55,7 @@ To optimize the designed objective functions, we employ [Bayesian Optimization](
 
 The originally detected car can be incorrectly detected under linear motion blur. (a) The car is detected with a high confidence score (0.997) without blur. (b) The car is detected with a decreased confidence score (0.919) with light linear motion blur. (c-d) The car is undetected when linear motion blur is increased.
 
-![(a)](./images/HA1.png = 100) ![(b)](./images/HA2.png) <br>
+![(a)](./images/HA1.png =100) ![(b)](./images/HA2.png) <br>
 ![(c)](./images/HA3.png) ![(d)](./images/HA4.png)
 
 - **Creating attacks** (CA) induce a non-existent object.
