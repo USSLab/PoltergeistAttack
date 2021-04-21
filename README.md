@@ -64,7 +64,7 @@ The originally detected car can be incorrectly detected under linear motion blur
 The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
 
 
-<img src=./images/CA1.png width="200px" /> <img src=./images/CA2.png width="200px" /><img src=./images/CA3.png width="200px" /><img src=./images/CA4.png width="200px" />
+<img src=./images/CA1.png width="200px" /> <img src=./images/CA2.png width="200px" /> <img src=./images/CA3.png width="200px" /> <img src=./images/CA4.png width="200px" />
 
 
 - **Altering attacks** (AA) cause an object to be misclassified.
