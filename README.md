@@ -1,10 +1,20 @@
-# What is PoltergeistAttack?
+# What is PoltergeistAttack? ![](https://img.shields.io/badge/License-USSLab-blue)
 
 Autonomous vehicles increasingly exploit computer-visionbased object detection systems to perceive environments and make critical driving decisions. To increase the quality of images, image stabilizers with inertial sensors are added to alleviate image blurring caused by camera jitter. However, such a trend opens a new attack surface. This paper identifies a system-level vulnerability resulting from the combination of the emerging image stabilizer hardware susceptible to acoustic manipulation and the object detection algorithms subject to adversarial examples. By emitting deliberately designed acoustic signals, an adversary can control the output of an inertial sensor, which triggers unnecessary motion compensation and results in a blurred image, even if the camera is stable. The blurred images can then induce object misclassification affecting safety critical decision making. We model the feasibility of such acoustic manipulation and design an attack framework that can accomplish three types of attacks, i.e., hiding, creating, and altering objects. Evaluation results demonstrate the effectiveness of our attacks against four academic object detectors (**YOLO V3/V4/V5** and **Faster R-CNN**), and one commercial detector (**Apollo**). We further introduce the concept of AMpLe  attacks, a new class of system-level security vulnerabilities resulting from a combination of adversarial machine learning and physics-based injection of information-carrying signals into hardware.
 
 ## How does PoltergeistAttack work?
 
-![attack](./images/attack.png)
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./images/attack.png">
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;"></div>
+</center>
+
 
 # Simulation Evaluation
 
@@ -45,25 +55,38 @@ To optimize the designed objective functions, we employ [Bayesian Optimization](
 
 The originally detected car can be incorrectly detected under linear motion blur. (a) The car is detected with a high confidence score (0.997) without blur. (b) The car is detected with a decreased confidence score (0.919) with light linear motion blur. (c-d) The car is undetected when linear motion blur is increased.
 
-![](./images/HA1.png) ![](./images/HA2.png) ![](./images/HA3.png) ![](./images/HA4.png)
+
+<img src=./images/HA1.png width="200px"/> <img src=./images/HA2.png width="200px"/> <img src=./images/HA3.png width="200px"/> <img src=./images/HA4.png width="200px"/>
+
 
 - **Creating attacks** (CA) induce a non-existent object.
 
 The originally undetected region in an image (a). Under different linear motion blur, the region can be incorrectly detected as a person class (b), a boat class (c), and a car class (d).
 
-![](./images/CA1.png) ![](./images/CA2.png) ![](./images/CA3.png) ![](./images/CA4.png)
+
+<img src=./images/CA1.png width="200px" /> <img src=./images/CA2.png width="200px" /> <img src=./images/CA3.png width="200px" /> <img src=./images/CA4.png width="200px" />
+
 
 - **Altering attacks** (AA) cause an object to be misclassified.
 
 The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) under different motion blur.
 
-![](./images/AA1.png) ![](./images/AA2.png) ![](./images/AA3.png) ![](./images/AA4.png)
+
+<img src=./images/AA1.png width="200px" /> <img src=./images/AA2.png width="200px" /> <img src=./images/AA3.png width="200px" /> <img src=./images/AA4.png width="200px" />
+
+
+Here is a **demo video** showing the real-world attack effects of the three attacks introduced above.
+<img src=./images/demo.gif width="800px" />
+
 
 # Real-world Attack Evaluation
 
 In the real-world evaluation, we target a smartphone on a moving vehicle and conduct PG attacks towards it inside the vehicle via acoustic signals. Here are some [demo videos](https://sites.google.com/view/poltergeistattack/).
+<center>
+<img src=./images/setup.png width="600px" />
+</center>
 
-![](./images/setup.png)
+
 
 > @INPROCEEDINGS {
     author = {X. Ji and Y. Cheng and Y. Zhang and K. Wang and C. Yan and W. Xu and K. Fu},
@@ -85,11 +108,25 @@ In the real-world evaluation, we target a smartphone on a moving vehicle and con
 
 # Powered by
 
-## Ubiquitous System Security Laboratory (USSLab)
-
-<a href="http:/usslab.org">![USSLab logo](./images/usslab_logo.png)</a>
-
-## Zhejiang University 
-
-<a href="http://www.zju.edu.cn/english/">![ZJU logo](./images/zju_logo.png)</a>
-
+<table bgcolor="white">
+<tr valign="middle">
+<td width="50%" align="center" colspan="2">
+ <a href="http://usslab.org">Ubiquitous System Security Laboratory (USSLab) 
+</td>
+<td width="50%" align="center" colspan="2">
+  <a href="http://www.zju.edu.cn/english">Zhejiang University 
+</td>
+</tr>
+<tr valign="middle">
+<td width="50%" align="center" colspan="2">
+  <a href="http://usslab.org"></a>
+  <a href="http://usslab.org"><img 
+src="./images/usslab_logo.png" height="80"></a>
+</td>
+<td width="50%" align="center" colspan="2">
+  <a href="http://www.zju.edu.cn/english/"></a>
+  <a href="http://www.zju.edu.cn/english/"><img 
+src="./images/zju_logo.png" height="80"></a>
+</td>
+</tr>
+</table>
