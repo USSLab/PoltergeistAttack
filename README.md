@@ -85,6 +85,7 @@ In the real-world evaluation, we target a smartphone on a moving vehicle and con
 <center>
 <img src=./images/setup.png width="600px" />
 </center>
+
 # Citation
 
 ```
