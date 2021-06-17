@@ -85,7 +85,19 @@ In the real-world evaluation, we target a smartphone on a moving vehicle and con
 <center>
 <img src=./images/setup.png width="600px" />
 </center>
+# Citation
 
+```
+@INPROCEEDINGS {
+    author = {X. Ji and Y. Cheng and Y. Zhang and K. Wang and C. Yan and W. Xu and K. Fu},
+    booktitle = {2021 2021 IEEE Symposium on Security and Privacy (SP)},
+    title = {Poltergeist: Acoustic Adversarial Machine Learning against Cameras and Computer Vision},
+    year = {2021},
+    publisher = {IEEE Computer Society},
+    address = {Los Alamitos, CA, USA},
+    month = {may}
+}
+```
 
 
 # Contact
