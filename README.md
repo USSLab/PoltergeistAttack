@@ -80,8 +80,6 @@ In the real-world evaluation, we target a smartphone on a moving vehicle and con
 }
 ```
 
-![](./images/setup.png)
-
 # Citation
 ```
 @INPROCEEDINGS {
