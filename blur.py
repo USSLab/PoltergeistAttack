@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import cv2
 from numba import jit
 
 
@@ -45,3 +46,11 @@ def cal_blur(imgarray, theta, delta, L, S=0):
                 [sum_r / count, sum_g / count, sum_b / count]
             )
     return blurred_imgarray
+
+arr = 255 - cv2.imread(r"C:\Users\Administrator\Desktop\lane.png", cv2.IMREAD_UNCHANGED)[...,-1]
+arr = arr.reshape([*arr.shape, 1])
+arr = np.concatenate([arr]*3, axis=2)
+empty = 255 * np.ones((200, 400, 3))
+arr = np.concatenate([arr, empty], axis=1)
+arr = cal_blur(arr, 20, 0, 0)[:, :-400]
+cv2.imwrite(r"C:\Users\Administrator\Desktop\lane_b.png", arr.astype(np.uint8))
