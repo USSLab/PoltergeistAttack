@@ -61,7 +61,7 @@ The car (a) can be misclassified as a bus (b), a bottle (c), and a person (d) un
 
 # Real-world Attack Evaluation
 
-In the real-world evaluation, we target a smartphone on a moving vehicle and conduct PG attacks towards it inside the vehicle via acoustic signals. 
+In the real-world evaluation, we target a smartphone on a moving vehicle and conduct PG attacks towards it inside the vehicle via acoustic signals. Here are some [demo videos](https://sites.google.com/view/blur-adv/).
 <center>
 <img src=./images/setup.png width="600px" />
 </center>
